@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity_pod">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_primary"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Approval"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/linearLayout1"
+            android:layout_width="450dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="122dp"
+            android:id="@+id/linearLayout2">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/id2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="t3"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/id3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="t4"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/id4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="t4"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/id5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="t4"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                android:gravity="center_horizontal"/>
+
+
+
+            <EditText
+
+                android:id="@+id/leave_form"
+                android:layout_width="140dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="50dp"
+                android:ems="0"
+                android:hint="Leave From"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.156"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/leave_to"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="50dp"
+                android:ems="10"
+                android:hint="Leave To"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.863"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <EditText
+                android:id="@+id/days"
+                android:layout_width="350dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="150dp"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="No of days"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.156"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <EditText
+                android:id="@+id/goal_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:ems="10"
+                android:hint="Reason"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:lines="6"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:scrollHorizontally="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.156"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/Lp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goal_weight"
+                android:layout_centerHorizontal="true"
+                android:text="leave With pay"
+                tools:layout_editor_absoluteX="138dp"
+                tools:layout_editor_absoluteY="466dp" />
+
+            <Button
+                android:id="@+id/LWP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goal_weight"
+                android:layout_centerHorizontal="true"
+                android:text="leave Without pay"
+                tools:layout_editor_absoluteX="138dp"
+                tools:layout_editor_absoluteY="466dp" />
+
+            <Button
+                android:id="@+id/UN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goal_weight"
+                android:layout_centerHorizontal="true"
+                android:text="Consideration"
+                tools:layout_editor_absoluteX="138dp"
+                tools:layout_editor_absoluteY="466dp" />
+
+            <Button
+                android:id="@+id/con"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goal_weight"
+                android:layout_centerHorizontal="true"
+                android:text="Unapprove"
+                tools:layout_editor_absoluteX="138dp"
+                tools:layout_editor_absoluteY="466dp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
